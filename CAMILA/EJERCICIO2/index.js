@@ -1,4 +1,5 @@
-require('dotenv').config();
+// 2. Crear una aplicación que genere resúmenes de contenido de texto mediante un LLM (IA), de tal forma que estos resúmenes se 
+// obtengan de la IA lo más rápido posible haciendo de esta manera que la app sea eficiente.require('dotenv').config();
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const HUGGING_API_KEY = process.env.HUGGING_API_KEY;
