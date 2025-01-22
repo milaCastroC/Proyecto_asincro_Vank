@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #742ecf">
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="home.html">Async-Project VANK</a>
+            <a class="navbar-brand" href="/">Async-Project VANK</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,19 +22,19 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="fileCreator.html">Creador de archivos</a>
+                        <a class="nav-link" href="/create-file">Creador de archivos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="summarizeIA.html">Resumir con IA</a>
+                        <a class="nav-link" href="/summarize-with-IA">Resumir con IA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="weather.html">Consultar clima</a>
+                        <a class="nav-link" href="/weather">Consultar clima</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="emailSender.html">Envío correos</a>
+                        <a class="nav-link" href="/email-sender">Envío correos</a>
                     </li>
                 </ul>
             </div>
@@ -43,28 +43,37 @@
     </nav>
 
     <div class="container text-center">
-        <form>
+        <form id="form">
             <div class="title container">
                 <h1 class="mt-5 text-center">CREADOR ARCHIVOS</h1>
             </div>
 
             <div class="form-item input-group mt-3" >
                 <span class="input-group-text" id="basic-addon1">Cantindad de archivos a generar</span>
-                <input type="number" class="form-control" min="1" value="1" required>
+                <input type="number" class="form-control" id="filesAmount" min="1" value="100" required>
             </div>
 
             <div class="form-item form-floating mt-3">
-                <textarea class="form-control" id="floatingTextarea2"
-                    style="height: 200px" required></textarea>
-                <label for="floatingTextarea2">Contenido del archivo</label>
+                <textarea class="form-control" id="fileContent" 
+                    style="height: 200px;" required></textarea>
+                <label for="fileContent">Contenido del archivo</label>
             </div>
+
+            
 
             <button class="btn btn-purple btn-lg" type="submit">
                 Crear Archivos
             </button>
+
+            <div id="alertMessage" class="alert alert-success alert-dismissible fade show mt-3 d-none" role="alert">
+                ¡Archivos creados exitosamente!
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
         </form>
+
     </div>
 
+    <script src="../scripts/fileCreator.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
