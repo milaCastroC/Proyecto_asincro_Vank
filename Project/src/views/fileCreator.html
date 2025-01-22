@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/fileCreator.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #742ecf">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="home.html">Async-Project VANK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fileCreator.html">Creador de archivos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="summarizeIA.html">Resumir con IA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="weather.html">Consultar clima</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="emailSender.html">Envío correos</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <form>
+            <div class="title container">
+                <h1 class="mt-5 text-center">CREADOR ARCHIVOS</h1>
+            </div>
+
+            <div class="form-item input-group mt-3" >
+                <span class="input-group-text" id="basic-addon1">Cantindad de archivos a generar</span>
+                <input type="number" class="form-control" min="1" value="1" required>
+            </div>
+
+            <div class="form-item form-floating mt-3">
+                <textarea class="form-control" id="floatingTextarea2"
+                    style="height: 200px" required></textarea>
+                <label for="floatingTextarea2">Contenido del archivo</label>
+            </div>
+
+            <button class="btn btn-purple btn-lg" type="submit">
+                Crear Archivos
+            </button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

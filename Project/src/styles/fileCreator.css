@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ecdafd;
+}
+
+.form-item input{
+    background-color: #dbbcf8;
+}
+
+.form-item span{
+    color: white;
+    background-color: #a571d6;
+}
+
+.form-item textarea{
+    background-color: #dbbcf8;
+}
+
+.form-item label {
+    color: #a571d6;
+}
+
+.btn-purple {
+    margin: 2rem;
+    background-color: #742ecf;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: #6c5ce7;
+}

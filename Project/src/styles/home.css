@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #e9d4fd;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.btn-container {
+    border: 2px solid #742ecf;
+    border-radius: 15px;
+    padding: 3rem;
+    box-shadow: 0 0 20px rgba(116, 46, 207, 0.1);
+}
+
+
+.btn-purple {
+    background-color: #742ecf;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: #6c5ce7;
+}
