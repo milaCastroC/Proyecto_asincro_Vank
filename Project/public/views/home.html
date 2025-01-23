@@ -39,15 +39,48 @@
         </div>
     </nav>
 
-    <div class="container btn-container">
-        <h1 class="mb-5">ASYNC PROJECT</h1>
-        <div class="button-container d-flex flex-wrap justify-content-center gap-3">
-            <a href="/create-file" class="btn btn-purple btn-lg">Creador de archivos</a>
-            <a href="/summarize-with-IA" class="btn btn-purple btn-lg">Resumir con IA</a>
-            <a href="/weather" class="btn btn-purple btn-lg">Consultar clima (Medellín)</a>
-            <a href="/email-sender" class="btn btn-purple btn-lg">Envío de correos</a>
+    <main class="container mt-5">
+        <h1 class="text-center mb-5 main-title">ASYNC PROJECT</h1>
+        <div class="row row-cols-2 g-4 justify-content-center">
+            <div class="col">
+                <a href="/create-file" class="feature-card">
+                    <div class="card-icon">
+                        <img src = "../assets/icons/archivo.png"/>
+                    </div>
+                    <h2>Creador de archivos</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/summarize-with-IA" class="feature-card">
+                    <div class="card-icon" >
+                        <img src = "../assets/icons/IA.png"/>
+                    </div>
+                    <h2>Resumir con IA</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/weather" class="feature-card">
+                    <div class="card-icon" >
+                        <img src = "../assets/icons/clima.png">
+                    </div>
+                    <h2>Consultar clima (Medellín)</h2>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/email-sender" class="feature-card">
+                    <div class="card-icon">
+                        <img src = "../assets/icons/email.png"/>
+                    </div>
+                    <h2>Envío de correos</h2>
+                </a>
+            </div>
         </div>
-    </div>
+    </main>
+    <footer class="mt-5 py-3 text-center" data-bs-theme = "dark" style="background-color: #742ecf;">
+        <p>&copy; 2025 Async-Project VANK. Todos los derechos reservados.</p>
+    </footer>
+
+    
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
