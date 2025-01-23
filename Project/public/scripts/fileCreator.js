@@ -5,7 +5,7 @@ document.getElementById('form').addEventListener('submit', async (event) => {
     const content = document.getElementById('fileContent').value;
 
     try {
-        const response = await fetch('http://localhost:3000/files', {
+        const response = await fetch('/files', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ filesAmount, content }),

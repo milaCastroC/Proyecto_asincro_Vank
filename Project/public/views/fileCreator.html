@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/fileCreator.css">
-    <title>Document</title>
+    <title>Async Project Vank</title>
 </head>
 
 <body>
@@ -21,21 +21,27 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="/create-file">Creador de archivos</a>
+                        <a class="nav-link active" href="/create-file">Creador de archivos</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="/summarize-with-IA">Resumir con IA</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="/weather">Consultar clima</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="/email-sender">Envío correos</a>
                     </li>
+
                 </ul>
             </div>
 
@@ -49,12 +55,12 @@
             </div>
 
             <div class="form-item input-group mt-3" >
-                <span class="input-group-text" id="basic-addon1">Cantindad de archivos a generar</span>
+                <span class="input-group-text" id="basic-addon1">Cantidad de archivos a generar</span>
                 <input type="number" class="form-control" id="filesAmount" min="1" value="100" required>
             </div>
 
             <div class="form-item form-floating mt-3">
-                <textarea class="form-control" id="fileContent" 
+                <textarea class="form-control" id="fileContent" placeholder=""
                     style="height: 200px;" required></textarea>
                 <label for="fileContent">Contenido del archivo</label>
             </div>

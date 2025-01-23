@@ -35,9 +35,12 @@ app.get('/email-sender', (req, res) => {
 });
 
 
-// Rutas
+// Rutas backend
 const fileRoutes = require('./routes/files');
 app.use('/files', fileRoutes);
+
+const iaRoutes = require('./routes/ia');
+app.use('/ia', iaRoutes)
 
 // Iniciar el servidor
 app.listen(PORT, () => {

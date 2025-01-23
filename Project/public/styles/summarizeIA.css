@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ecdafd;
+}
+
+.form-item textarea {
+    background-color: #d9d0e2;
+}
+
+.form-item label {
+    color: #a571d6;
+}
+
+.btn-purple {
+    margin: 1.5rem 0px;
+    background-color: #742ecf;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: #6c5ce7;
+}
+
+
+.card-header {
+    background-color: #742ecf;
+    color: rgb(223, 200, 236);
+}
+
+.card-body {
+    background-color: #d9d0e2;
+}
+
