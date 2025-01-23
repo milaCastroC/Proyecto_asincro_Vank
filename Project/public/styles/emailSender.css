@@ -1,29 +1,27 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #ecdafd;
 }
 
-.form-item input{
+.form-item input {
     background-color: #d9d0e2;
 }
 
-.form-item span{
+.form-item span {
     color: white;
     background-color: #a571d6;
 }
 
-.form-item textarea{
+.form-item textarea {
     background-color: #d9d0e2;
 }
 
 .form-item label {
     color: #a571d6;
-    display: block;
-    margin-bottom: 0.5 rem;
 }
 
 .btn-purple {
