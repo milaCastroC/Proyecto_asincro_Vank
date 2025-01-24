@@ -1,11 +1,9 @@
+require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const xlsx = require('xlsx'); //Para manejar archivos excel
 const multer = require('multer');
 const upload = multer({ storage: multer.memoryStorage() });
-
-
-require('dotenv').config();
 
 const router = express.Router();
 
