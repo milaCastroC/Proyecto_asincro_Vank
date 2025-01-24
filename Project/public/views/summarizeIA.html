@@ -52,8 +52,14 @@
                     <label for="text">Texto a resumir</label>
                 </div>
 
-                <button class="btn btn-purple btn-lg" type="submit">
-                    Resumir texto
+                <div id="alertMessage" class="alert alert-danger alert-dismissible fade show mt-3 d-none" role="alert">
+                    Error al resumir el texto, vuelve a intetar en unos momentos
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                <button class="btn btn-purple btn-lg" id="btn-summarize" type="submit">
+                    <span class="spinner-border spinner-border-sm d-none" id="spinner" aria-hidden="true"></span>
+                    <span role="status" id="button-text">Resumir texto</span>
                 </button>
 
             </form>

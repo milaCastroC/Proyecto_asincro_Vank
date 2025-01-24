@@ -2,7 +2,16 @@ document.getElementById('form').addEventListener('submit', async (event) => {
     event.preventDefault();
 
     const text = document.getElementById('text').value;
-    const iaResponse = document.getElementById('iaResponse')
+    const iaResponse = document.getElementById('iaResponse');
+    const btn = document.getElementById('btn-summarize');
+    const spinner = document.getElementById('spinner');
+    const btnText = document.getElementById('button-text');
+    const alertMessage = document.getElementById("alertMessage");
+
+
+    btn.disabled = true;
+    spinner.classList.remove('d-none');
+    btnText.textContent = "Resumiendo...";
     
 
     try {
@@ -28,7 +37,18 @@ document.getElementById('form').addEventListener('submit', async (event) => {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
     } catch (error) {
+
         console.error('Error:', error);
-        alert('Error creando archivo');
+        alertMessage.classList.add("alert-danger");
+        alertMessage.classList.remove("d-none");
+        setTimeout(() => {
+            alertMessage.classList.add("d-none");
+            alertMessage.classList.remove("alert-danger");
+        }, 5000);
+
+    } finally {
+        btn.disabled = false;
+        spinner.classList.add('d-none');
+        btnText.textContent = "Resumir texto";
     }
 });

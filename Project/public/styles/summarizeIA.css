@@ -14,7 +14,6 @@ body {
 }
 
 .title-container{
-    color: #742ecf;
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
@@ -38,6 +37,10 @@ body {
 }
 
 .btn-purple:hover {
+    background-color: #6c5ce7;
+}
+
+#btn-summarize:disabled {
     background-color: #6c5ce7;
 }
 

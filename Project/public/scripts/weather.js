@@ -7,7 +7,7 @@ document.getElementById("checkWeather").addEventListener("click", async () => {
 
     weatherResult.classList.add("d-none");
     errorAlert.classList.add("d-none");
-    checkWeatherButton.classList.add("d-none");
+    checkWeatherButton.textContent = 'Volver a consultar';
 
     try {
         const meteo = fetch("https://api.open-meteo.com/v1/forecast?latitude=6.25184&longitude=-75.56359&current_weather=true")

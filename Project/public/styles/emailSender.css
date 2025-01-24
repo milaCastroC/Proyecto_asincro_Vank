@@ -1,8 +1,10 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,7 +13,12 @@ body {
 
 
 .container {
-    flex: 1; /* Hace que el contenedor principal tome el espacio disponible */
+    flex: 1;
+    /* Hace que el contenedor principal tome el espacio disponible */
+}
+
+.form-item {
+    margin-top: 1.5rem;
 }
 
 .form-item input {
@@ -19,12 +26,20 @@ body {
 }
 
 .form-item span {
-    color: white;
-    background-color: #a571d6;
+    color: rgb(255, 255, 255);
+    background-color: #9d72c9;
+    justify-content: center;
 }
 
 .form-item textarea {
     background-color: #d9d0e2;
+    color: rgb(56, 56, 56);
+}
+
+#subject, #sender {
+    align-content: center;
+    font-weight: bold;
+    
 }
 
 .form-item label {
@@ -43,13 +58,38 @@ body {
     background-color: #6c5ce7;
 }
 
+.callout {
+    font-size: 0.8rem;
+    text-align: left;
+    border-left: 5px solid #742ecf;
+    padding: 0.8rem;
+    margin: 1rem 0;
+    background-color: #f3f3f3;
+}
+
+.callout h5 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.callout p {
+    margin: 0;
+    color: #8618ee;
+}
+
+#sendEmails:disabled {
+    background-color: #6c5ce7;
+}
+
 footer {
-    flex-shrink: 0; /* Evita que el footer se reduzca */
+    flex-shrink: 0;
+    /* Evita que el footer se reduzca */
     background-color: #742ecf;
     color: white;
     padding: 15px 0;
     text-align: center;
-    position: sticky;
-    bottom: 0; /* Fija el footer en la parte inferior */
+    bottom: 0;
+    /* Fija el footer en la parte inferior */
     width: 100%;
 }

@@ -42,6 +42,9 @@ app.use('/files', fileRoutes);
 const iaRoutes = require('./routes/ia');
 app.use('/ia', iaRoutes)
 
+const emailRoutes = require('./routes/email')
+app.use('/email', emailRoutes);
+
 // Iniciar el servidor
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);

@@ -63,10 +63,9 @@ h1 {
   transition: all 0.3s ease;
 }
 
-.btn-purple:hover,
-.btn-purple:focus {
-  background-color: #5e25a5;
-  border-color: #5e25a5;
+.btn-purple:hover{
+  background-color: #322c3a;
+  border-color: #201033;
   color: white;
 }
 
